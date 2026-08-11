@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café & Afeto | Cafeteria Artesanal e Espaço Cultural</title>
+    <!-- Vinculação do arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Topo e Menu de Navegação estruturado com Flexbox -->
+    <header class="cabecalho-principal">
+        <div class="container-navegacao">
+            <h2>Café & Afeto</h2>
+            <nav aria-label="Navegação principal">
+                <ul class="lista-navegacao">
+                    <li><a href="#inicio" class="link-navegacao">Início</a></li>
+                    <li><a href="#destaques" class="link-navegacao">Destaques</a></li>
+                    <li><a href="#contato" class="link-navegacao">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <!-- Seção de boas-vindas com botões de ação rápida -->
+        <section class="secao-introducao" aria-labelledby="titulo-boas-vindas">
+            <h1 id="titulo-boas-vindas" class="titulo-principal">Café Artesanal & Cultura</h1>
+            <p class="subtitulo-principal">Um espaço de acolhimento e sabores únicos no coração da cidade.</p>
+            <div class="grupo-botoes">
+                <a href="#destaques" class="botao-acao">Ver Cardápio</a>
+                <a href="tel:+5511999999999" class="botao-acao">Pedir para Retirada</a>
+            </div>
+        </section>
+
+        <!-- Seção de Destaques estruturada com CSS Grid -->
+        <section id="destaques" class="secao-destaques" aria-labelledby="titulo-destaques">
+            <h2 id="titulo-destaques" class="titulo-secao">Nossos 3 Cafés Mais Vendidos</h2>
+            
+            <div class="grade-produtos">
+                <!-- Produto 1 -->
+                <article class="card-produto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl-TGpzaJqMdgsrujUlMSqhLIGTnLMQXbWO8dtYIyOe2wvoIKVdc1aG8g&s=10" alt="Xícara de Café Expresso com uma camada espessa de creme cor avelã" class="imagem-produto">
+                    <div class="conteudo-card">
+                        <h3 class="titulo-produto">Expresso Afeto</h3>
+                        <p class="descricao-produto">Grãos selecionados com notas de chocolate amargo e caramelo artesanal.</p>
+                        <span class="preco-produto">R$ 8,50</span>
+                    </div>
+                </article>
+
+                <!-- Produto 2 -->
+                <article class="card-produto">
+                    <img src="https://static.vecteezy.com/ti/fotos-gratis/p2/76472621-copo-do-cafe-com-leite-com-coracao-em-forma-arte-em-espuma-em-de-madeira-mesa-delicioso-cafe-beber-para-dia-dos-namorados-dia-amor-e-romance-conceito-foto.jpeg" alt="Copo de vidro com Café Latte exibindo arte de coração feita com o leite vaporizado" class="imagem-produto">
+                    <div class="conteudo-card">
+                        <h3 class="titulo-produto">Latte Acolhimento</h3>
+                        <p class="descricao-produto">Leite cremoso vaporizado perfeitamente sobre uma dose dupla do nosso expresso da casa.</p>
+                        <span class="preco-produto">R$ 12,00</span>
+                    </div>
+                </article>
+
+                <!-- Produto 3 -->
+                <article class="card-produto">
+                    <img src="https://api.reciperm.io/services/recipe/p/asset/legacy/10551.webp" alt="Xícara de Cappuccino salpicada com canela em pó ao lado de grãos de café" class="imagem-produto">
+                    <div class="conteudo-card">
+                        <h3 class="titulo-produto">Cappuccino Cultural</h3>
+                        <p class="descricao-produto">Equilíbrio perfeito de café, leite vaporizado e um toque sutil de canela e cacau.</p>
+                        <span class="preco-produto">R$ 14,00</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé estruturado com Flexbox contendo o formulário -->
+    <footer id="contato" class="rodape-principal">
+        <div class="conteudo-rodape">
+            <aside aria-label="Informações de funcionamento">
+                <h3>Vem nos visitar!</h3>
+                <p>Rua da Cultura, 123 - Centro</p>
+                <p>Segunda a Sábado: 8h às 20h</p>
+                <p>Telefone: (65) 99818-6578</p>
+            </aside>
+
+            <form class="formulario-contato" action="#" method="POST" aria-label="Formulário de contato">
+                <h3>Fale com a Mariana</h3>
+                <div class="grupo-campo">
+                    <label for="nome" class="rotulo-campo">Seu Nome:</label>
+                    <input type="text" id="nome" name="nome" class="input-campo" required placeholder="Digite seu nome completo">
+                </div>
+                <div class="grupo-campo">
+                    <label for="mensagem" class="rotulo-campo">Sua Mensagem ou Pedido:</label>
+                    <input type="text" id="mensagem" name="mensagem" class="input-campo" required placeholder="Como podemos te ajudar?">
+                </div>
+                <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+            </form>
+        </div>
+    </footer>
+
+</body>
+</html>
